@@ -1,2 +1,2 @@
 # MA4402-SimulacionEstocastica
-Repositorio para entregas de proyecto final
+Repositorio para entregas de proyecto final.
