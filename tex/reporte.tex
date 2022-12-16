@@ -1,0 +1,115 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[activeacute,spanish,es-nodecimaldot]{babel}
+\usepackage[left=1.5cm,top=1.5cm,right=1.5cm, bottom=1.5cm,letterpaper, includeheadfoot]{geometry}
+
+\usepackage{amssymb, amsmath, amsthm}
+\usepackage{bm}
+\usepackage{dsfont}
+\usepackage{graphicx}
+\usepackage{lmodern,url}
+\usepackage[x11names,svgnames,dvipsnames]{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage[colorlinks=true,urlcolor=brown!75!black!]{hyperref}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+\usepackage{wrapfig}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancypagestyle{plain}{%
+\fancyhf{}
+\lhead{\footnotesize\itshape\bfseries\rightmark}
+\rhead{\footnotesize\itshape\bfseries\leftmark}
+}
+
+%Secciones sin numeración
+\setcounter{secnumdepth}{0}
+
+% macros
+\newcommand{\QQ}{\mathbb Q}
+\newcommand{\RR}{\mathbb R}
+\newcommand{\NN}{\mathbb N}
+\newcommand{\ZZ}{\mathbb Z}
+\newcommand{\CC}{\mathbb C}
+
+%Teoremas, Lemas, etc.
+\theoremstyle{plain}
+\newtheorem{teo}{Teorema}
+\newtheorem{lem}{Lema}
+\newtheorem{prop}{Proposición}
+\newtheorem{cor}{Corolario}
+
+\theoremstyle{definition}
+\newtheorem{defi}{Definición}
+\newtheorem{eje}{Ejemplo}
+\newtheorem{ejer}{Ejercicio}
+% fin macros
+
+%%%%% NOMBRE Y FECHA
+\newcommand{\ramo}{MA4402 - Simulación Estocástica} %Nombre y código del ramo
+\newcommand{\profe}{Joaquin Fontbona T.}%Nombre del profe
+\newcommand{\nmbrA}{Francisco Maldonado P.}%Nombre del estudiante A
+\newcommand{\nmbrB}{Víctor Sáez M.}    %Nombre del estudiante B
+\newcommand{\nmbrC}{}    %Nombre del estudiante C
+\newcommand{\fecha}{22 de diciembre 2021}%Fecha
+\newcommand{\titu}{Simulación de flujo monetario como fénomeno físico } %Título
+
+%%%%%%%%%%%%%%%%%%
+
+%Macros para este documento
+\newcommand{\cin}{\operatorname{cint}}
+
+
+\begin{document}
+\pagestyle{empty}
+%Encabezado
+\fancyhead[L]{Facultad de Ciencias Físicas y Matemáticas}
+\fancyhead[R]{Universidad de Chile}
+\vspace*{-1.2 cm}
+\begin{minipage}{0.6\textwidth}
+\begin{flushleft}
+\hspace*{-0.5cm}\textbf{\ramo}\\
+\hspace*{-0.5cm}\textbf{Docente:} \profe\\
+\hspace*{-0.5cm}\textbf{Nombre:} \nmbrA\quad \nmbrB\quad \nmbrC
+\\
+\hspace*{-0.5cm}\textbf{Fecha:} \fecha\\
+\smallskip
+\end{flushleft}
+\end{minipage}
+\begin{minipage}{0.36\textwidth}
+\begin{flushright}
+\includegraphics[scale=0.35]{fcfm}
+\end{flushright}
+\end{minipage}
+\bigskip
+%Fin encabezado
+
+\begin{center}
+\Huge\textbf{\titu}
+\end{center}
+\bigskip
+
+\section{Cadena}
+
+Se suponen $N$ agentes económicos, cada uno con su riqueza $w_{i}\geq 0 $. Sea $W = \sum\limits_{i=1}^{N} w_{i}$ la  cantidad total de riqueza. 
+A partir de esto se construye la variable aleatoria $W_{i}$ correspondiente a la riqueza del agente $i$. Estamos interesados tanto en la distribución del vector $(W_{1},...,W_{n})$ como en la de las distribuciones marginales $W_{1}$ de los agentes.
+La transformación siguiente normaliza la riqueza total del sistema a $1$, \[
+X_{i}=\frac{W_{i}}{W}
+\]
+y el vector $(X_{1},...,X_{N})$ es una partición finita aleatoria del intervalo $(0,1)$, donde los  $X_{i}$ se denominan {\sl spacings} de la partición.
+La siguientes observaciones son útilses y justifican este modelo simplificado de la distribución de riqueza:
+\begin{itemize}
+    \item Si $w_{i}$ representa riqueza, pueude ser negativa debido a deuda. En este caso, uno puede desplazar la riqueza a valores positivos sustrayendo 
+    \item
+\end{itemize}
+
+
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
