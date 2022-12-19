@@ -1,0 +1,125 @@
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[activeacute,spanish]{babel}
+\usepackage{enumerate}
+%\renewcommand{\labelenumi}{\normalsize\bfseries P\arabic{enumi}.}
+%\renewcommand{\labelenumii}{\normalsize\bfseries (\alph{enumii})}
+%\renewcommand{\labelenumiii}{\normalsize\bfseries \roman{enumiii})}
+
+%\oddsidemargin -1.0cm
+%\textwidth 18.4cm
+%\topmargin -2.5cm
+%\textheight 24cm
+
+\DeclareMathOperator{\sen}{sen}
+\DeclareMathOperator{\senh}{senh}
+\DeclareMathOperator{\arcsen}{arcsen}
+\DeclareMathOperator{\tg}{tg}
+\DeclareMathOperator{\arctg}{arctg}
+\DeclareMathOperator{\ctg}{ctg}
+\DeclareMathOperator{\dom}{Dom}
+\DeclareMathOperator{\sech}{sech}
+\DeclareMathOperator{\rec}{Rec}
+\DeclareMathOperator{\inte}{Int}
+\DeclareMathOperator{\adh}{Adh}
+\DeclareMathOperator{\fr}{Fr}
+\DeclareMathOperator{\Ima}{Im}
+\DeclareMathOperator{\argmin}{\text{argmin}}
+\DeclareMathOperator{\co}{co}
+\DeclareMathOperator{\coC}{\overline{\co}}
+\DeclareMathOperator{\epi}{epi}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\D}{D}
+\DeclareMathOperator{\sdif}{\partial}
+\let\lim=\undefined\DeclareMathOperator*{\lim}{\text{lim}}
+\let\max=\undefined\DeclareMathOperator*{\max}{\text{max}}
+\let\min=\undefined\DeclareMathOperator*{\min}{\text{min}}
+\let\inf=\undefined\DeclareMathOperator*{\inf}{\text{inf}}
+
+\newcommand{\enc}[3]{\Large \textbf{#1}\\ \normalsize #2\\ #3}
+\newcommand{\sol}{\textbf{Soluci\'on: }}
+%================ATAJO FLECHAS=============================
+\newcommand{\ssi}{\Longleftrightarrow}
+\newcommand{\imp}{\implies}
+\newcommand{\pmi}{\Longleftarrow}
+\newcommand{\contra}{\rightarrow \leftarrow}
+%=========================================================
+
+%================ATAJO CONJUNTOS===========================
+\newcommand{\V}{\mathbb{V}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\1}{\mathds{1}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+%\newcommand{\RR}{\mathbb{R} \times \mathbb{R}}
+\newcommand{\vacio}{\varnothing}
+\newcommand{\Ker}{\mathbb{K}\text{er}}
+\renewcommand{\Im}{\mathbb{I}\text{m}}
+\newcommand{\Rel}{\mathcal{R}}
+\newcommand{\gen}[1]{\left \langle #1  \right \rangle }
+\renewcommand{\S}{\mathcal{S}}
+\newcommand{\I}{\mathcal{I}}
+\newcommand{\RR}{\mathcal{R}}
+%=========================================================
+
+
+%================ATAJO DERIVADAS===========================
+\newcommand{\ipartial}[2]{\dfrac{\partial #1}{\partial #2}}
+\newcommand{\ider}[2]{\dfrac{d #1}{d #2}}
+\newcommand{\iipartial}[2]{\dfrac{\partial^2 #1}{\partial #2^2}}
+\newcommand{\iider}[2]{\dfrac{d^2 #1}{d #2^2}}
+\newcommand{\ijpartial}[3]{\dfrac{\partial^2 #1}{\partial #2 \partial #3}}
+%=========================================================
+
+%================ATAJO LETRAS==============================
+\newcommand{\f}{\varphi}
+\newcommand{\e}{\varepsilon}
+%=========================================================
+
+%================PROBABILIDADES=============================
+%\newcommand{\E}{\mathbb{E}}
+\newcommand{\Var}{\mathrm{Var}}
+\newcommand{\Cov}{\mathrm{Cov}}
+%\newcommand{\P}{\mathbb{P}}
+%=========================================================
+
+%=================MISCELANEA===============================
+\newcommand{\Def}{\overset{\cdot}{=}}
+\newcommand{\nconj}[1]{\left \{  1, \ldots, #1   \right \}}
+\newcommand{\p}[3]{\left #1 #3 \right #2}
+\newcommand{\Vector}[1]{\left ( #1_ 1, \ldots, #1 _n\right)}
+\newcommand{\ds}[1]{\displaystyle{#1}}
+\newcommand{\normal}{\trianglelefteq}
+\renewcommand{\P}{\mathbb{P}}
+\newcommand{\Esp}{\mathbb{E}}
+\newcommand{\limite}{\lim\limits_{n\to \infty}}
+\newcommand{\suma}[2]{\sum\limits_{#1}^{#2}}
+\newcommand{\Comp}[1]{\mathcal{O}\Par{#1}}
+%=========================================================
+
+%=================VECTORES COLUMNA=========================
+\newcount\colveccount
+\newcommand*\colvec[1]{
+        \global\colveccount#1
+        \begin{pmatrix}
+        \colvecnext
+}
+\def\colvecnext#1{
+        #1
+        \global\advance\colveccount-1
+        \ifnum\colveccount>0
+                \\
+                \expandafter\colvecnext
+        \else
+                \end{pmatrix}
+        \fi
+}
+
+%Por ejemplo \colvec{5}{a}{b}{c}{d}{e}
+%=========================================================
+
+%=================MATRICES=================================
+\newcommand{\matriz}[1]{\begin{pmatrix} #1 \end{pmatrix}}
+
